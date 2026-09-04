@@ -26,7 +26,14 @@
     "gameEditorMode": "instances-editor"
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "FingeringPattern",
+      "persistentUuid": "cbfc1cc5-4790-417a-9bf5-089aebddbcd3",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -245,22 +252,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "test",
-      "persistentUuid": "45022083-d6a8-497a-bb50-f837b31e30cb",
-      "width": 0,
-      "x": 305,
-      "y": 41,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
     }
   ],
   "objects": [
@@ -431,7 +422,7 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "test",
+      "name": "LogicTest",
       "persistentUuid": "f64b14a6-74e3-4559-a7b2-904f6a991ef9",
       "smoothed": true,
       "type": "TextObject::Text",
@@ -439,7 +430,7 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Text",
+      "string": "True/False",
       "font": "SIMSUN.ttf",
       "textAlignment": "left",
       "characterSize": 70,
@@ -462,7 +453,51 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Text",
+        "text": "True/False",
+        "font": "SIMSUN.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 70,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "LogicTest2",
+      "persistentUuid": "0cbbad30-ac96-4ce0-a3ea-1c308d7d30b4",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "True/False",
+      "font": "SIMSUN.ttf",
+      "textAlignment": "left",
+      "characterSize": 70,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "True/False",
         "font": "SIMSUN.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
@@ -479,7 +514,10 @@
         "objectName": "chanterHole"
       },
       {
-        "objectName": "test"
+        "objectName": "LogicTest"
+      },
+      {
+        "objectName": "LogicTest2"
       },
       {
         "objectName": "disclaimer"
@@ -686,17 +724,6 @@
             "chanterHole",
             "\"255;0;0\""
           ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "test",
-            "Text",
-            "=",
-            "chanterHole.VariableString(IsClosed)"
-          ]
         }
       ]
     },
@@ -744,17 +771,6 @@
             "chanterHole",
             "\"116;116;116\""
           ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "test",
-            "Text",
-            "=",
-            "chanterHole.VariableString(IsClosed)"
-          ]
         }
       ]
     },
@@ -802,17 +818,6 @@
             "chanterHole",
             "\"255;0;0\""
           ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "test",
-            "Text",
-            "=",
-            "chanterHole.VariableString(IsClosed)"
-          ]
         }
       ]
     },
@@ -859,17 +864,6 @@
           "parameters": [
             "chanterHole",
             "\"116;116;116\""
-          ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "test",
-            "Text",
-            "=",
-            "chanterHole.VariableString(IsClosed)"
           ]
         }
       ]
@@ -918,17 +912,6 @@
             "chanterHole",
             "\"255;0;0\""
           ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "test",
-            "Text",
-            "=",
-            "chanterHole.VariableString(IsClosed)"
-          ]
         }
       ]
     },
@@ -976,17 +959,6 @@
             "chanterHole",
             "\"116;116;116\""
           ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "test",
-            "Text",
-            "=",
-            "chanterHole.VariableString(IsClosed)"
-          ]
         }
       ]
     },
@@ -1034,17 +1006,6 @@
             "chanterHole",
             "\"255;0;0\""
           ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "test",
-            "Text",
-            "=",
-            "chanterHole.VariableString(IsClosed)"
-          ]
         }
       ]
     },
@@ -1091,17 +1052,6 @@
           "parameters": [
             "chanterHole",
             "\"116;116;116\""
-          ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "test",
-            "Text",
-            "=",
-            "chanterHole.VariableString(IsClosed)"
           ]
         }
       ]
@@ -1150,17 +1100,6 @@
             "chanterHole",
             "\"255;0;0\""
           ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "test",
-            "Text",
-            "=",
-            "chanterHole.VariableString(IsClosed)"
-          ]
         }
       ]
     },
@@ -1208,17 +1147,6 @@
             "chanterHole",
             "\"116;116;116\""
           ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "test",
-            "Text",
-            "=",
-            "chanterHole.VariableString(IsClosed)"
-          ]
         }
       ]
     },
@@ -1265,17 +1193,6 @@
           "parameters": [
             "chanterHole",
             "\"255;0;0\""
-          ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "test",
-            "Text",
-            "=",
-            "chanterHole.VariableString(IsClosed)"
           ]
         }
       ]
@@ -1324,17 +1241,6 @@
             "chanterHole",
             "\"116;116;116\""
           ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "test",
-            "Text",
-            "=",
-            "chanterHole.VariableString(IsClosed)"
-          ]
         }
       ]
     },
@@ -1382,17 +1288,6 @@
             "chanterHole",
             "\"255;0;0\""
           ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "test",
-            "Text",
-            "=",
-            "chanterHole.VariableString(IsClosed)"
-          ]
         }
       ]
     },
@@ -1439,17 +1334,6 @@
           "parameters": [
             "chanterHole",
             "\"116;116;116\""
-          ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "test",
-            "Text",
-            "=",
-            "chanterHole.VariableString(IsClosed)"
           ]
         }
       ]
@@ -1524,6 +1408,109 @@
         "textR": 0
       },
       "comment": "FINGERINGS"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "chanterHole",
+            "IsClosed",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PickedInstancesCount"
+          },
+          "parameters": [
+            "chanterHole",
+            "=",
+            "8"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "FadeSoundVolume"
+          },
+          "parameters": [
+            "",
+            "1",
+            "100",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySoundOnChannel"
+          },
+          "parameters": [
+            "",
+            "assets/CHANTER/low_g.mp3",
+            "1",
+            "yes",
+            "100",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "chanterHole",
+            "IsClosed",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PickedInstancesCount"
+          },
+          "parameters": [
+            "chanterHole",
+            "<",
+            "8"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "FadeSoundVolume"
+          },
+          "parameters": [
+            "",
+            "1",
+            "0",
+            "1"
+          ]
+        }
+      ]
     }
   ],
   "layers": [
