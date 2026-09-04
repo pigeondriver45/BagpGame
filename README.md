@@ -1,6 +1,8 @@
 # hey read this first please
 this game/program is <span style="font-size: 50px;">HEAVILY</span> unfinished
+
 do not complain when all you see is a chanter with true/false booleans on screen
+
 i will make a demo release when the fingerings actually work
 
 # What is BagpGame?
